@@ -3,56 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>たにだのページ</title>
+    <title>たにだの自己紹介</title>
     <style>
+        /* 全体のスタイル */
         body {
-            font-family: sans-serif;
-            line-height: 1.8;
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            line-height: 1.6;
             color: #333;
-            max-width: 500px;
-            margin: 60px auto;
-            padding: 0 20px;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
         }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        /* ヘッダー部分 */
+        header {
+            text-align: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            background-color: #ddd;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+
         h1 {
-            font-size: 1.5rem;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 10px;
+            margin: 10px 0;
+            color: #2c3e50;
         }
-        .content {
-            margin-top: 30px;
+
+        /* 各セクション */
+        section {
+            margin-bottom: 30px;
         }
-        .item {
-            margin-bottom: 20px;
+
+        h2 {
+            font-size: 1.2rem;
+            color: #3498db;
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+            margin-bottom: 15px;
         }
-        .label {
-            font-weight: bold;
-            display: block;
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #e1f0fa;
+            color: #3498db;
+            padding: 5px 12px;
+            border-radius: 20px;
+            margin: 5px;
             font-size: 0.9rem;
-            color: #666;
+        }
+
+        /* フッター */
+        footer {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #888;
+            margin-top: 50px;
         }
     </style>
 </head>
 <body>
 
+<div class="container">
     <header>
+        <div class="profile-img">👤</div>
         <h1>たにだ / Tanida</h1>
+        <p>〜 ここに短いキャッチコピーや肩書きを 〜</p>
     </header>
 
-    <div class="content">
-        <div class="item">
-            <span class="label">自己紹介</span>
-            <p>こんにちは</p>
-        </div>
+    <section>
+        <h2>自己紹介</h2>
+        <p>
+            はじめまして、たにだです。このページに足を運んでいただきありがとうございます。<br>
+            普段は〇〇をしたり、△△に興味を持って活動しています。
+        </p>
+    </section>
 
-        <div class="item">
-            <span class="label">リンク / 連絡先</span>
-            <p>ここにURLなどを入力してください。</p>
-        </div>
-    </div>
+    <section>
+        <h2>プロフィール</h2>
+        <ul>
+            <li><strong>出身：</strong> 〇〇県</li>
+            <li><strong>趣味：</strong> 読書、散歩、ガジェット収集</li>
+            <li><strong>好きな言葉：</strong> 継続は力なり</li>
+        </ul>
+    </section>
 
-    <footer style="margin-top: 100px; font-size: 0.8rem; color: #999;">
-        &copy; たにだ
+    <section>
+        <h2>得意なこと / スキル</h2>
+        <div class="skills">
+            <span>HTML/CSS</span>
+            <span>コミュニケーション</span>
+            <span>早起き</span>
+            <span>整理整頓</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>ひとこと</h2>
+        <p>
+            最近は新しい技術や趣味に挑戦中です。もし興味を持っていただけたら、お気軽にご連絡ください！
+        </p>
+    </section>
+
+    <footer>
+        &copy; 2026 Tanida All Rights Reserved.
     </footer>
+</div>
 
 </body>
 </html>
